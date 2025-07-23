@@ -11,6 +11,7 @@ import (
 	"github.com/daiyuang/sshman/core/model"
 	"github.com/daiyuang/sshman/core/ssh"
 	"github.com/daiyuang/sshman/desktop/pkg"
+	"github.com/daiyuang/sshman/system"
 	"github.com/samber/lo"
 	"log"
 	"strconv"
@@ -34,6 +35,10 @@ func newSide(manager *ssh.Manager) *fyne.Container {
 		conn := sshList[i]
 		log.Printf("你选择了：%s@%s:%d", conn.Username, conn.Host, conn.Port)
 		// TODO: 你可以在这里启动 terminal 连接
+		err := system.OpenDefaultTerminal()
+		if err != nil {
+			return
+		}
 	}
 
 	// 添加按钮行为：弹出 Modal 表单

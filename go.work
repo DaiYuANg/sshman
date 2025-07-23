@@ -5,4 +5,5 @@ use (
 	./apps/desktop
 	./apps/terminal
 	./libs/core
+	./libs/system
 )
