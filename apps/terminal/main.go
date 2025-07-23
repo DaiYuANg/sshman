@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/daiyuang/sshman/terminal/cmd"
 	"github.com/spf13/cobra"
-	"sman/cmd"
 )
 
 func main() {

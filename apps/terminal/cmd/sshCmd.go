@@ -2,13 +2,14 @@ package cmd
 
 import (
 	"context"
+	"github.com/daiyuang/sshman/core"
 	"github.com/spf13/cobra"
 )
 
 var sshCmd = &cobra.Command{
 	Use: "ssh",
 	RunE: func(cmd *cobra.Command, args []string) error {
-		return createContainer().Start(context.Background())
+		return core.CreateContainer().Start(context.Background())
 	},
 }
 

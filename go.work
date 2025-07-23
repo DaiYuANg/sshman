@@ -2,5 +2,7 @@ go 1.24
 
 use (
 	.
-	sshman
+	./apps/desktop
+	./apps/terminal
+	./libs/core
 )

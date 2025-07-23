@@ -3,8 +3,8 @@ package metadata
 import (
 	"encoding/json"
 	"errors"
+	"github.com/daiyuang/sshman/core/model"
 	"go.etcd.io/bbolt"
-	"sman/internal/model"
 	"time"
 )
 
