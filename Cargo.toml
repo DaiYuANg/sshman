@@ -1,0 +1,7 @@
+[workspace.metadata]
+name = "sshman"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = ['desktop/src-tauri']
